@@ -1,0 +1,152 @@
+* { 
+  padding:0px;   
+  margin:0px;    
+  box-sizing:border-box}
+
+:root {
+    font-size: 62.5%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: 400%;
+  
+  background: 100%;
+  background: linear-gradient(87.2deg, #190361 0%, #BB00FF 100%); 
+}
+
+.pag .screen1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  width: 42.5rem;
+  height: 42.4rem;
+  margin-top: 3.4rem;
+  box-shadow: 0px 20px 50px rgba(255, 0, 0, 0.489);
+  border-radius: 6px;
+  background-color: #e3c2ef;
+}
+
+h1 {
+  color: #34355B;
+  font-family: 'Montserrat';
+  text-align: center;
+  
+  font-size: 3.1rem;
+  width: 300px;
+  line-height: 3.2rem;
+  margin-top: 3.5rem;
+}
+
+.antes h1 {
+  width: 25.8rem;
+}
+
+.screen1 p {
+  font-family: 'Montserrat';
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+  color: #34355B;
+}
+
+#biscoito_inteiro{
+  cursor: pointer;
+}
+
+#biscoito_inteiro:hover {
+  animation: shake 700ms infinite;
+}
+
+
+
+/* SCREEN 2 */ 
+
+.pag .screen2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  
+  width: 42.8rem;
+  height: 56.4rem;
+  margin-top: 1.8rem;
+  
+  border-radius: 5px;
+  background-color: #e3c2ef;
+  box-shadow: 0px 20px 50px rgba(255, 0, 0, 0.489);
+}
+
+.screen2 h1 {
+  font-size: 2.9rem;
+  margin-top: 50px;
+  width: 30rem;
+}
+
+.screen2 p {
+  font-family: 'Montserrat';
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  padding: 1.2rem;
+  width: 31rem;
+  margin-top: 47px;
+  margin-bottom: 10px;
+
+  background-color:rgba(255, 0, 0, 0.235);
+  border-radius: 10px;
+  animation: slideUp 2s ease;
+}
+
+.screen2 button {
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 17.4rem;
+  height: 5.2rem;
+  color: rgba(43, 42, 42, 0.669);
+  cursor: pointer;
+  
+  border: none;
+  border-radius: 5px;
+  background-color:rgba(255, 0, 0, 0.235);
+}
+
+.pag .hide {
+  display: none;
+}
+
+.screen2 {
+  margin-top: 2rem;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(180px) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(100%);
+  }
+}
+
